@@ -6,7 +6,7 @@ import traeBadgePlugin from 'vite-plugin-trae-solo-badge'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/cats/',
+  base: process.env.VITE_BASE_URL || '/',
   server: {
     host: '0.0.0.0', // 允许局域网访问
     port: 5173,
