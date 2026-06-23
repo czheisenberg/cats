@@ -24,4 +24,8 @@ export interface Cat {
   personality: string
   careTips: string
   isPopular: boolean
+  careTipsEn: string
+  appearanceEn: string
+  personalityEn: string
+  descriptionEn: string
 }
