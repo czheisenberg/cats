@@ -1,8 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomePage from '@/pages/HomePage.vue'
 import AboutPage from '@/pages/AboutPage.vue'
+import CatDetailPage from '@/pages/CatDetailPage.vue'
+import RegionPage from '@/pages/RegionPage.vue'
 
-// 定义路由配置
 const routes = [
   {
     path: '/',
@@ -14,9 +15,18 @@ const routes = [
     name: 'about',
     component: AboutPage,
   },
+  {
+    path: '/cat/:id',
+    name: 'cat-detail',
+    component: CatDetailPage,
+  },
+  {
+    path: '/region/:id',
+    name: 'region',
+    component: RegionPage,
+  },
 ]
 
-// 创建路由实例
 const router = createRouter({
   history: createWebHistory(),
   routes,

@@ -1,0 +1,67 @@
+﻿Abyssinian|0XYvRd7oD|Egypt
+Aegean|ozEvzdVM-|Greece
+American Bobtail|hBXicehMA|United States
+American Curl|xnsqonbjW|United States
+American Shorthair|JFPROfGtQ|United States
+American Wirehair|8D--jCd21|United States
+Arabian Mau|k71ULYfRr|United Arab Emirates
+Australian Mist|_6x-3TiCA|Australia
+Balinese|13MkvUreZ|United States
+Bambino|5AdhMjeEu|United States
+Bengal|O3btzLlsO|United States
+Birman|HOrX5gwLS|France
+Bombay|5iYq9NmT1|United States
+British Longhair|7isAO4Cav|United Kingdom
+British Shorthair|s4wQfYoEk|United Kingdom
+Burmese|4lXnnfxac|Burma
+Burmilla|jvg3XfEdC|United Kingdom
+California Spangled|B1ERTmgph|United States
+Chantilly-Tiffany|TR-5nAd_S|United States
+Chartreux|j6oFGLpRG|France
+Chausie|vJ3lEYgXr|Egypt
+Cheetoh|IFXsxmXLm|United States
+Colorpoint Shorthair|oSpqGyUDS|United States
+Cornish Rex|unX21IBVB|United Kingdom
+Cymric|3dbtapCWM|Canada
+Cyprus|tJbzb7FKo|Cyprus
+Devon Rex|4RzEwvyzz|United Kingdom
+Donskoy|3KG57GfMW|Russia
+Dragon Li|BQMSld0A0|China
+Egyptian Mau|TuSyTkt2n|Egypt
+European Burmese||Burma
+Exotic Shorthair|YnPrYEmfe|United States
+Havana Brown|njK25knLH|United Kingdom
+Himalayan|CDhOtM-Ig|United States
+Japanese Bobtail|-tm9-znzl|Japan
+Javanese|xoI_EpOKe|United States
+Khao Manee|165ok6ESN|Thailand
+Korat|DbwiefiaY|Thailand
+Kurilian|NZpO4pU56M|Russia
+LaPerm|aKbsEYjSl|Thailand
+Maine Coon|OOD3VXAQn|United States
+Malayan||United Kingdom
+Manx|fhYh2PDcC|Isle of Man
+Munchkin|j5cVSqLer|United States
+Nebelung|OGTWqNNOt|United States
+Norwegian Forest Cat|06dgGmEOV|Norway
+Ocicat|JAx-08Y0n|United States
+Oriental|LutjkZJpH|United States
+Persian|-Zfz5z2jK|Iran (Persia)
+Pixie-bob|z7fJRNeN6|United States
+Ragamuffin|SMuZx-bFM|United States
+Ragdoll|oGefY4YoG|United States
+Russian Blue|Rhj-JsTLP|Russia
+Savannah|a8nIYvs6S|United States
+Scottish Fold|o9t0LDcsa|United Kingdom
+Selkirk Rex|II9dOZmrw|United States
+Siamese|ai6Jps4sx|Thailand
+Siberian|3bkZAjRh1|Russia
+Singapura|Qtncp2nRe|Singapore
+Snowshoe|MK-sYESvO|United States
+Somali|EPF2ejNS0|Somalia
+Sphynx|BDb8ZXb1v|Canada
+Tonkinese|KBroiVNCM|Canada
+Toyger|O3F3_S1XN|United States
+Turkish Angora|7CGV6WVXq|Turkey
+Turkish Van|sxIXJax6h|Turkey
+York Chocolate|0SxW2SQ_S|United States

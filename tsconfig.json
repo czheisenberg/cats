@@ -12,11 +12,14 @@
       "@/*": [
         "./src/*"
       ]
-    }
+    },
+    "resolveJsonModule": true
   },
   "include": [
     "src/**/*.ts",
+    "src/**/*.d.ts",
     "src/**/*.vue",
+    "src/**/*.json",
     "api"
   ]
 }
