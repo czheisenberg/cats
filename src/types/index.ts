@@ -3,6 +3,7 @@ export interface Region {
   name: string
   nameEn: string
   continent: string
+  flag: string
   description?: string
   cats?: Cat[]
 }

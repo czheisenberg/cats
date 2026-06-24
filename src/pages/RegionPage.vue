@@ -6,7 +6,7 @@ import { getRegion } from '@/api/catApi'
 import { useI18n } from '@/composables/useI18n'
 import type { Region, Cat } from '@/types'
 
-const { t, getRegionName, getContinentName } = useI18n()
+const { t, getRegionName, getContinentName, getFlagUrl } = useI18n()
 
 const route = useRoute()
 const router = useRouter()
@@ -64,8 +64,8 @@ onMounted(() => {
           </button>
 
           <div class="flex items-center gap-4">
-            <div class="w-16 h-16 rounded-full bg-amber-500 flex items-center justify-center text-white text-3xl">
-              🌍
+            <div class="w-16 h-16 rounded-full bg-amber-100 flex items-center justify-center overflow-hidden shadow-md">
+              <img :src="getFlagUrl(region.id)" :alt="getRegionName(region)" class="w-12 h-9 object-contain" />
             </div>
             <div>
               <h1 class="text-3xl font-bold text-gray-800">{{ getRegionName(region) }}</h1>

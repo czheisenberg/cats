@@ -44,6 +44,39 @@ export const useI18n = () => {
     return map[continent] || continent
   }
 
+  // 获取国旗图片URL
+  const getFlagUrl = (regionId: string): string => {
+    const countryCodeMap: Record<string, string> = {
+      japan: 'JP',
+      china: 'CN',
+      thailand: 'TH',
+      myanmar: 'MM',
+      singapore: 'SG',
+      indonesia: 'ID',
+      iran: 'IR',
+      turkey: 'TR',
+      cyprus: 'CY',
+      uk: 'GB',
+      france: 'FR',
+      germany: 'DE',
+      russia: 'RU',
+      norway: 'NO',
+      finland: 'FI',
+      greece: 'GR',
+      italy: 'IT',
+      egypt: 'EG',
+      ethiopia: 'ET',
+      kenya: 'KE',
+      usa: 'US',
+      canada: 'CA',
+      mexico: 'MX',
+      brazil: 'BR',
+      australia: 'AU',
+    }
+    const code = countryCodeMap[regionId] || regionId.toUpperCase()
+    return `https://flagcdn.com/w40/${code.toLowerCase()}.png`
+  }
+
   // 初始化语言
   const initLocale = () => {
     const savedLocale = localStorage.getItem('locale') as Locale
@@ -60,6 +93,7 @@ export const useI18n = () => {
     getCatName,
     getRegionName,
     getContinentName,
+    getFlagUrl,
     initLocale,
   }
 }

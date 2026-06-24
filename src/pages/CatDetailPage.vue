@@ -6,7 +6,7 @@ import { getCat, getRelatedCats } from '@/api/catApi'
 import { useI18n } from '@/composables/useI18n'
 import type { Cat } from '@/types'
 
-const { t, getCatName, getRegionName, locale } = useI18n()
+const { t, getCatName, getRegionName, locale, getFlagUrl } = useI18n()
 
 const route = useRoute()
 const router = useRouter()
@@ -137,8 +137,9 @@ onMounted(() => {
               <p class="text-gray-500 text-lg mb-4">{{ cat.nameEn }}</p>
 
               <div class="flex flex-wrap gap-3 mb-6">
-                <span class="px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-sm">
-                  🌍 {{ getRegionName(cat.region!) }}
+                <span class="px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-sm flex items-center gap-1.5">
+                  <img v-if="cat.region" :src="getFlagUrl(cat.region.id)" :alt="getRegionName(cat.region)" class="w-4 h-3 object-contain" />
+                  {{ getRegionName(cat.region!) }}
                 </span>
                 <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">
                   {{ getSizeLabel(cat.size) }}

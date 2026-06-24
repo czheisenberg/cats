@@ -4,7 +4,7 @@ import * as echarts from 'echarts'
 import type { Region } from '@/types'
 import { useI18n } from '@/composables/useI18n'
 
-const { t, getRegionName, getContinentName } = useI18n()
+const { t, getRegionName, getContinentName, getFlagUrl } = useI18n()
 
 const props = defineProps<{
   regions: Region[]
@@ -116,9 +116,11 @@ const initChart = async () => {
       formatter: (params: any) => {
         if (params.data && params.data.region) {
           const region = params.data.region
+          const flagUrl = getFlagUrl(region.id)
           return `
-            <div style="font-weight: bold; font-size: 16px; margin-bottom: 8px;">
-              🌍 ${getRegionName(region)}
+            <div style="font-weight: bold; font-size: 16px; margin-bottom: 8px; display: flex; align-items: center; gap: 8px;">
+              <img src="${flagUrl}" style="width: 28px; height: 20px; object-fit: contain;" />
+              ${getRegionName(region)}
             </div>
             <div style="color: #666; margin-bottom: 4px;">
               ${region.nameEn} · ${getContinentName(region.continent)}

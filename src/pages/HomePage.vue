@@ -7,7 +7,7 @@ import { getRegions, getPopularCats, getCatsByRegion, searchCats } from '@/api/c
 import { useI18n } from '@/composables/useI18n'
 import type { Region, Cat } from '@/types'
 
-const { locale, t, getCatName, getRegionName, getContinentName } = useI18n()
+const { locale, t, getCatName, getRegionName, getContinentName, getFlagUrl } = useI18n()
 
 const router = useRouter()
 
@@ -147,11 +147,12 @@ onMounted(() => {
           <button
             v-for="region in regions"
             :key="region.id"
-            class="px-3 py-1.5 rounded-full text-sm transition-all duration-300"
+            class="px-3 py-1.5 rounded-full text-sm transition-all duration-300 flex items-center gap-2"
             :class="[selectedRegion?.id === region.id ? 'bg-amber-500 text-white shadow-lg' : 'bg-white text-gray-600 hover:bg-amber-100']"
             @click="handleRegionSelect(region)"
           >
-            {{ getRegionName(region) }}
+            <img :src="getFlagUrl(region.id)" :alt="getRegionName(region)" class="w-5 h-4 object-contain" />
+            <span>{{ getRegionName(region) }}</span>
           </button>
         </div>
 
